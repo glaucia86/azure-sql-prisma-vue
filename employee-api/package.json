@@ -1,0 +1,47 @@
+{
+  "name": "employee-api",
+  "version": "1.0.0",
+  "description": "Full Stack Application using Node + Azure SQL + Prisma + Vue",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon",
+    "lint": "eslint --ext .js -f .node_modules/eslint-friendly-formatter . --fix",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "full-stack-app",
+    "express",
+    "prisma",
+    "azure-sql",
+    "javascript",
+    "vue",
+    "crud-app",
+    "azure",
+    "azure-web-app",
+    "azure-app-service",
+    "aswa",
+    "azure-static-web-apps",
+    "azure-functions",
+    "serverless"
+  ],
+  "author": "Glaucia Lemos <@glaucia_lemos - Twitter>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glaucia86/azure-sql-prisma-vue/issues"
+  },
+  "homepage": "https://github.com/glaucia86/azure-sql-prisma-vue#readme",
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "nodemon": "^2.0.15",
+    "prisma": "^3.7.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "express": "^4.17.2",
+    "express-promise-router": "^4.1.1"
+  }
+}
