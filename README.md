@@ -11,6 +11,7 @@ A real study case application how to apply Node.Js with Azure SQL + Prisma & Vue
 - **[Azure Free Account](https://azure.microsoft.com/?WT.mc_id=javascript-52133-gllemos)**
 - **[Azure App Service](https://docs.microsoft.com/azure/app-service/overview?WT.mc_id=javascript-52133-gllemos)**
 - **[Azure Functions Vs Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=javascript-52133-gllemos)**
+- **[Prisma Vs Code Extension](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma&WT.mc_id=javascript-52133-gllemos)**
 
 ## 💻 Video Series
 
