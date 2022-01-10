@@ -36,3 +36,18 @@ exports.createEmployee = async (req, res) => {
     });
   }
 };
+
+exports.findEmployeeById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const employee = await prisma.employee.findUnique({
+      where: {
+        employee_id: String(id),
+      },
+    });
+    res.status(200).send(employee);
+  } catch (error) {
+    console.log('findEmployeeById', error);
+    res.status(500).send({ message: 'Occur an error!' });
+  }
+};
