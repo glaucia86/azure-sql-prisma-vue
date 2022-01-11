@@ -6,16 +6,14 @@
  */
 
 const prisma = require('../config/prisma-client.config');
+const { CustomError, HttpResponse } = require('../utils/index');
 
 exports.listAllEmployees = async (req, res) => {
   try {
     const employees = await prisma.employee.findMany({});
     res.status(200).send(employees);
   } catch (error) {
-    console.log('listAllEmployees', error);
-    res.status(500).send({
-      message: 'Occur an error!',
-    });
+    throw new CustomError(error.message, HttpResponse.INTERNAL_SERVER_ERROR);
   }
 };
 
@@ -28,10 +26,7 @@ exports.createEmployee = async (req, res) => {
       .status(201)
       .send({ message: 'Employee created successfully!', employee });
   } catch (error) {
-    console.log('createEmployee', error);
-    res.status(500).send({
-      message: 'Occur an error!',
-    });
+    throw new CustomError(error.message, HttpResponse.INTERNAL_SERVER_ERROR);
   }
 };
 
@@ -45,8 +40,7 @@ exports.findEmployeeById = async (req, res) => {
     });
     res.status(200).send(employee);
   } catch (error) {
-    console.log('findEmployeeById', error);
-    res.status(500).send({ message: 'Occur an error!' });
+    throw new CustomError(error.message, HttpResponse.INTERNAL_SERVER_ERROR);
   }
 };
 
@@ -63,8 +57,7 @@ exports.updateEmployeeById = async (req, res) => {
       .status(200)
       .send({ message: 'Employee updated successfully', employee });
   } catch (error) {
-    console.log('updateEmployeeById', error);
-    res.status(500).send({ message: 'Occur an error!' });
+    throw new CustomError(error.message, HttpResponse.INTERNAL_SERVER_ERROR);
   }
 };
 
@@ -80,7 +73,6 @@ exports.deleteEmployeeById = async (req, res) => {
       .status(200)
       .send({ message: 'Employee deleted successfully', employee });
   } catch (error) {
-    console.log('deleteEmployeeById', error);
-    res.status(500).send({ message: 'Occur an error' });
+    throw new CustomError(error.message, HttpResponse.INTERNAL_SERVER_ERROR);
   }
 };
