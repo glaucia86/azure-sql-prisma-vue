@@ -1,0 +1,34 @@
+### Create a new Employee
+POST http://localhost:3001/api/v1/employees
+
+Content-Type: application/json
+
+{
+  "name": "Glaucia Lemos",
+  "job_role": "Cloud Advocate Microsoft",
+  "salary": "30000",
+  "birth": "1986-10-24T00:00:00.000Z",
+  "employee_registration": 327598
+}
+
+### List All Employees
+GET http://localhost:3001/api/v1/employees
+
+### Return an Employee By Id
+GET http://localhost:3001/api/v1/:id
+
+### update an Employee by Id
+PUT http://localhost:3001/api/v1/:id
+
+Content-Type: application/json
+
+{
+  "name": "Glaucia Lemos",
+  "job_role": "Cloud Advocate Microsoft JavaScript",
+  "salary": "40000",
+  "birth": "1986-10-24T00:00:00.000Z",
+  "employee_registration": 327598
+}
+
+### Delete an Employee by Id
+DELETE http://localhost:3001/api/v1/:id
