@@ -20,4 +20,7 @@ router.get('/employees/:id', employeeController.findEmployeeById);
 // ==> Update 'Employee' by Id: (PUT): localhost:3001/api/v1/employees/:id
 router.put('/employees/:id', employeeController.updateEmployeeById);
 
+// ==> Delete 'Employee' by Id: (DELETE): localhost:3001/api/v1/employees/:id
+router.delete('/employees/:id', employeeController.deleteEmployeeById);
+
 module.exports = router;

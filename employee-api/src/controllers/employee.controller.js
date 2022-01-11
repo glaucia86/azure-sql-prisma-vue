@@ -69,3 +69,20 @@ exports.updateEmployeeById = async (req, res) => {
     res.status(500).send({ message: 'Occur an error!' });
   }
 };
+
+exports.deleteEmployeeById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const employee = await prisma.employee.delete({
+      where: {
+        employee_id: String(id),
+      },
+    });
+    res
+      .status(200)
+      .send({ message: 'Employee deleted successfully', employee });
+  } catch (error) {
+    console.log('deleteEmployeeById', error);
+    res.status(500).send({ message: 'Occur an error' });
+  }
+};
