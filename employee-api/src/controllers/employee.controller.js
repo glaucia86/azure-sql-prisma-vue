@@ -19,8 +19,16 @@ exports.listAllEmployees = async (req, res) => {
 
 exports.createEmployee = async (req, res) => {
   try {
+    const { name, job_role, salary, birth, employee_registration } = req.body
+
     const employee = await prisma.employee.create({
-      data: req.body,
+      data: {
+        name,
+        job_role,
+        salary,
+        employee_registration,
+        birth: new Date(birth).toISOString()
+      }
     });
     res
       .status(201)
@@ -49,11 +57,19 @@ exports.findEmployeeById = async (req, res) => {
 exports.updateEmployeeById = async (req, res) => {
   try {
     const { id } = req.params;
+    const {name, job_role, salary, birth, employee_registration } = req.body
+
     const employee = await prisma.employee.update({
       where: {
         employee_id: String(id),
       },
-      data: req.body,
+      data: {
+        name: name || undefined,
+        job_role: job_role || undefined,
+        salary: salary || undefined,
+        employee_registration: employee_registration || undefined,
+        birth: new Date(birth).toISOString() || undefined
+      },
     });
     res
       .status(200)
