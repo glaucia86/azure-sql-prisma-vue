@@ -4,11 +4,11 @@ POST http://localhost:3001/api/v1/employees
 Content-Type: application/json
 
 {
-  "name": "Glaucia Lemos",
-  "job_role": "Cloud Advocate Microsoft",
-  "salary": "30000",
-  "birth": "1986-10-24T00:00:00.000Z",
-  "employee_registration": 327598
+  "name": "Cynthia Zanoni",
+  "job_role": "Partner Solutions",
+  "salary": "50000",
+  "birth": "1990-11-20T00:00:00.000Z",
+  "employee_registration": 774455
 }
 
 ### List All Employees
