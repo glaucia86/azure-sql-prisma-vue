@@ -10,7 +10,9 @@
     "lint-fix": "npm run lint --fix"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "core-js": "^3.6.5",
+    "nprogress": "^0.2.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vue-sweetalert2": "^5.0.2",
