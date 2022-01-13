@@ -6,6 +6,7 @@
  */
 
 const prisma = require('../config/prisma-client.config');
+const { format } = require('date-fns');
 
 exports.listAllEmployees = async (req, res) => {
   try {
@@ -19,16 +20,18 @@ exports.listAllEmployees = async (req, res) => {
 
 exports.createEmployee = async (req, res) => {
   try {
-    const { name, job_role, salary, birth, employee_registration } = req.body
+    const { name, job_role, salary, birth, employee_registration } = req.body;
+
+    const dateFormat = format(new Date(birth), 'yyyy-MM-dd');
 
     const employee = await prisma.employee.create({
       data: {
         name,
         job_role,
         salary,
-        employee_registration,
-        birth: new Date(birth).toISOString()
-      }
+        employee_registration: parseInt(employee_registration),
+        birth: new Date(dateFormat)
+      },
     });
     res
       .status(201)
@@ -57,7 +60,9 @@ exports.findEmployeeById = async (req, res) => {
 exports.updateEmployeeById = async (req, res) => {
   try {
     const { id } = req.params;
-    const {name, job_role, salary, birth, employee_registration } = req.body
+    const { name, job_role, salary, birth, employee_registration } = req.body;
+
+    const dateFormat = format(new Date(birth), 'yyyy-MM-dd');
 
     const employee = await prisma.employee.update({
       where: {
@@ -68,7 +73,7 @@ exports.updateEmployeeById = async (req, res) => {
         job_role: job_role || undefined,
         salary: salary || undefined,
         employee_registration: employee_registration || undefined,
-        birth: new Date(birth).toISOString() || undefined
+        birth: new Date(dateFormat),
       },
     });
     res
