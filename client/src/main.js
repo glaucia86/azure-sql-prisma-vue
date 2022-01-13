@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueSweetalert2 from 'vue-sweetalert2';
 import Vuelidate from 'vuelidate';
 import './assets/icons';
+import { format } from 'date-fns';
 
 import App from './App.vue';
 import router from './router';
@@ -12,6 +13,12 @@ Vue.config.productionTip = false;
 
 Vue.use(VueSweetalert2);
 Vue.use(Vuelidate);
+
+Vue.filter('formatDate', (value) => {
+  if (value) {
+    return format(new Date(value), 'yyyy-MM-dd');
+  }
+});
 
 new Vue({
   router,

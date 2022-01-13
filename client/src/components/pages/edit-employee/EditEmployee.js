@@ -6,7 +6,8 @@
  * author: Glaucia Lemos <twitter: @glaucia_lemos86>
  */
 
-import EmployeeService from '../../../services/EmployeeService';
+import { format } from 'date-fns';
+import EmployeeService from '@/services/EmployeeService';
 
 export default {
   name: 'EditEmployeeComponent',
@@ -26,11 +27,11 @@ export default {
       const { id } = this.$route.params;
       const response = await EmployeeService.getEmployeeId(id);
 
-      this.employeeForm = { ...response };
+      this.employeeForm = { ...response, birth: format(new Date(response.birth), 'yyyy-MM-dd') };
     },
 
     async updateFormEmployee() {
-      // Chamada do service passando as propriedades por meio do 'employeeForm' (funciona)
+      //  Service call passing properties through 'employeeForm'
       await EmployeeService.updateEmployee(this.employeeForm);
       this.$swal({
         title: 'Employee updated successfully!',

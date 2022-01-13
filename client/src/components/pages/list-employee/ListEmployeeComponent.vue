@@ -17,7 +17,7 @@
           <td>{{ employee.name }}</td>
           <td>{{ employee.job_role }}</td>
           <td>{{ employee.salary }}</td>
-          <td>{{ employee.birth }}</td>
+          <td>{{ employee.birth | formatDate }}</td>
           <td>{{ employee.employee_registration }}</td>
           <td>
             <router-link
