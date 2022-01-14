@@ -75,29 +75,6 @@
           </div>
           <!-- FIM BLOCO: Salary -->
 
-          <!-- INÍCIO BLOCO: Birth -->
-          <div class="form-group">
-            <label class="font-weight-bold">Birth</label>
-            <input
-              type="date"
-              id="birth"
-              name="birth"
-              class="form-control"
-              placeholder="YYYY/MM/DD"
-              v-model="employeeForm.birth"
-              :class="{
-                'is-invalid': isSubmitted && $v.employeeForm.birth.$error,
-              }"
-            />
-            <div
-              v-if="isSubmitted && !$v.employeeForm.birth.required"
-              class="invalid-feedback"
-            >
-              'Birth' field is required!
-            </div>
-          </div>
-          <!-- FIM BLOCO: Birth -->
-
           <!-- INÍCIO BLOCO: Employee Registration -->
           <div class="form-group">
             <label class="font-weight-bold">Employee Registration</label>

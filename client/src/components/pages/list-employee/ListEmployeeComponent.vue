@@ -7,7 +7,6 @@
           <th class="text-center">Employee Name</th>
           <th class="text-center">Job Role</th>
           <th class="text-center">Salary</th>
-          <th class="text-center">Birth</th>
           <th class="text-center">Employee Registration</th>
           <th class="text-center">Actions</th>
         </tr>
@@ -17,7 +16,6 @@
           <td>{{ employee.name }}</td>
           <td>{{ employee.job_role }}</td>
           <td>{{ employee.salary }}</td>
-          <td>{{ employee.birth | formatDate }}</td>
           <td>{{ employee.employee_registration }}</td>
           <td>
             <router-link

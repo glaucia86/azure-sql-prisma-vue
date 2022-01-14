@@ -16,6 +16,5 @@ model Employee {
   name                  String   @db.NVarChar(100)
   job_role              String   @db.NVarChar(100)
   salary                Decimal  @db.Decimal(12, 2)
-  birth                 DateTime
   employee_registration Int      @db.Int
 }

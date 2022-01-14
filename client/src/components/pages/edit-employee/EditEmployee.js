@@ -27,7 +27,7 @@ export default {
       const { id } = this.$route.params;
       const response = await EmployeeService.getEmployeeId(id);
 
-      this.employeeForm = { ...response, birth: format(new Date(response.birth), 'yyyy-MM-dd') };
+      this.employeeForm = { ...response };
     },
 
     async updateFormEmployee() {

@@ -46,19 +46,6 @@
           </div>
           <!--FIM DO BLOCO: Job Role-->
 
-          <!--INÍCIO DO BLOCO: Birth-->
-          <div class="form-group">
-            <label class="font-weight-bold">Birth</label>
-            <input
-              type="date"
-              id="birth"
-              name="birth"
-              class="form-control"
-              v-model="employeeForm.birth"
-            >
-          </div>
-          <!--FIM DO BLOCO: Birth-->
-
           <!--INÍCIO DO BLOCO: Employee Registration-->
           <div class="form-group">
             <label class="font-weight-bold">Employee Registration</label>
@@ -70,7 +57,7 @@
               v-model="employeeForm.employee_registration"
             >
           </div>
-          <!--FIM DO BLOCO: Birth-->
+          <!--FIM DO BLOCO: Employee Registration-->
           <div class="form-group">
             <button type="submit" class="btn btn-primary">
               <font-awesome-icon :icon="['fas', 'user-edit']"/> Update
