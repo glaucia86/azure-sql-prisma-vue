@@ -1,6 +1,4 @@
-const { PrismaClient } = require('@prisma/client');
-
-const prisma = new PrismaClient();
+const prisma = require('../config/prisma-client.config');
 
 exports.listAllEmployees = async (req, res) => {
   try {
