@@ -49,3 +49,28 @@ exports.findEmployeeById = async (req, res) => {
     res.status(500).send({ message: 'Occur an error!' });
   }
 };
+
+exports.updateEmployeeById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { name, job_role, salary, employee_registration } = req.body;
+
+    const employee = await prisma.employee.update({
+      where: {
+        employee_id: String(id),
+      },
+      data: {
+        name: name || undefined,
+        job_role: job_role || undefined,
+        salary: salary || undefined,
+        employee_registration: employee_registration || undefined
+      },
+    });
+    res
+      .status(200)
+      .send({ message: 'Employee updated successfully', employee });
+  } catch (error) {
+    console.log('updateEmployeeById', error);
+    res.status(500).send({ message: 'Occur an error' });
+  }
+};

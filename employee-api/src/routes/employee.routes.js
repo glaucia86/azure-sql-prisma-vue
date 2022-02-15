@@ -10,4 +10,7 @@ router.post('/employees', employeeController.createEmployee);
 // ==> List 'Employee' by Id: (GET): localhost:3001/api/v1/employees/:id
 router.get('/employees/:id', employeeController.findEmployeeById);
 
+// ==> Update 'Employee' by Id: (PUT): localhost:3001/api/v1/employees/:id
+router.put('/employees/:id', employeeController.updateEmployeeById);
+
 module.exports = router;
