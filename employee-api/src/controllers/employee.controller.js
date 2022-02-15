@@ -13,3 +13,24 @@ exports.listAllEmployees = async (req, res) => {
     });
   }
 };
+
+exports.createEmployee = async (req, res) => {
+  try {
+    const { name, job_role, salary, employee_registration } = req.body;
+
+    const employee = await prisma.employee.create({
+      data: {
+        name,
+        job_role,
+        salary,
+        employee_registration: parseInt(employee_registration),
+      },
+    });
+    res
+      .status(201)
+      .send({ message: 'Employee created successfully!', employee });
+  } catch (error) {
+    console.log('createEmployee', error);
+    res.status(500).send({ message: 'Occur an error' });
+  }
+};
