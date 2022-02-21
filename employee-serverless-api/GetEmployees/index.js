@@ -1,13 +1,27 @@
-module.exports = async function (context, req) {
-    context.log('JavaScript HTTP trigger function processed a request.');
+/**
+ * file: GetEmployees/index.js
+ * date: 02/21/2022
+ * description: file responsible for list all the 'Employees'
+ * author: Glaucia Lemos <Twitter: @glaucia_lemos86>
+ */
 
-    const name = (req.query.name || (req.body && req.body.name));
-    const responseMessage = name
-        ? "Hello, " + name + ". This HTTP triggered function executed successfully."
-        : "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.";
+const prisma = require('../shared/prisma');
+const handleError = require('../shared/error');
 
-    context.res = {
-        // status: 200, /* Defaults to 200 */
-        body: responseMessage
-    };
-}
+module.exports = async function(context, req) {
+  try {
+    const employees = await prisma.employee.findMany({
+      orderBy: [{
+        name: 'asc'
+      }]
+    });
+
+    return {
+      status: 200,
+      body: employees,
+    }
+  } catch (error) {
+    context.log('Error to list all the Employees.');
+    return handleError(500, error, context);
+  }
+};

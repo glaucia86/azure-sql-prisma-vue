@@ -8,7 +8,7 @@
 const prisma = require('../shared/prisma');
 const handleError = require('../shared/error');
 
-module.exports = async function (context, req) {
+module.exports = async function(context, req) {
   try {
     const { name, job_role, salary, employee_registration } = req.body;
 
@@ -26,7 +26,7 @@ module.exports = async function (context, req) {
       body: employee,
     };
   } catch (error) {
-    context.log('Error to create a new Employee');
+    context.log('Error to create a new Employee.');
     return handleError(500, error, context);
   }
 };
