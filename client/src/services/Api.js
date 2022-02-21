@@ -9,6 +9,9 @@
 import axios from 'axios';
 
 export default () => axios.create({
-  //= => Back-End 'baseURL'-> will make communication btw Front-End with Back-End
-  baseURL: 'http://localhost:3001/api/v1',
+  // => Back-End (local) 'baseURL'-> will make communication btw Front-End with Back-End
+  // baseURL: 'http://localhost:3001/api/v1',
+
+  // ==> Back-End (azure functions)
+  baseURL: 'http://localhost:7071/api',
 });
