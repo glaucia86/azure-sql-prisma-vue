@@ -10,10 +10,10 @@ const handleError = require('../shared/error');
 
 module.exports = async function (context, req) {
   try {
-    const { employeeId } = req.params;
+    const { id } = req.params;
     const employee = await prisma.employee.findUnique({
       where: {
-        employee_id: String(employeeId),
+        employee_id: String(id),
       },
     });
 
