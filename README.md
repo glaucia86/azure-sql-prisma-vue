@@ -40,6 +40,43 @@ Below you can see all the recorded videos about the application's development.
 | **[Vídeo 19]()** | Video Description |
 | **[Vídeo 20]()** | Video Description |
 
+## How to run the application locally?
+
+<details><summary><b>Project: employee-api</b></summary> 
+
+To execute locally this project you will need to follow the steps bellow:
+
+1. First you need to go to the folder: `employee-api` and run the command:
+
+```bash
+> npm install
+```
+2. After to install all the Node.Js packages, now you can execute the command:
+
+```bash
+> nodemon
+```
+
+3. Now you will see the message saying the application is running in the port: `localhost:3000/api/v1` and start to test locally the application (using Postman):
+
+| Objective  |  HTTP Verb |  Route  | 
+|---|---|---|
+| Create a new Employee  | POST  | localhost:3001/api/v1/employees  | 
+| List All Employees  | GET  | localhost:3001/api/v1/employees |   
+| List Employee By Id | GET  | localhost:3001/api/v1/employees/:id |   
+| Update Employee By Id  | PUT  | localhost:3001/api/v1/employees/:id |  
+| Delete Employee By Id  | DELETE  | localhost:3001/api/v1/employees/:id |  
+
+</details>
+
+<details><summary><b>Project: client</b></summary>
+
+</details>
+
+<details><summary><b>Project: employee-serverless-api</b></summary>
+
+</details>
+
 ## ⭐️ Important Resources
 
 - ✅ **[Build serverless, full stack applications in Azure - Free Course](https://docs.microsoft.com/learn/paths/build-serverless-full-stack-apps-azure/?WT.mc_id=javascript-52133-gllemos)**
