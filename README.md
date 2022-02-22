@@ -51,13 +51,24 @@ To execute locally this project you will need to follow the steps bellow:
 ```bash
 > npm install
 ```
-2. After to install all the Node.Js packages, now you can execute the command:
+
+3. Include the Azure SQL Server connection string creating an `.env` file:
+
+```bash
+# Database connection string
+DATABASE_URL="sqlserver://DB_SERVER_NAME.database.windows.net:1433;database=DB_NAME;user=DB_USER@DB_SERVER_NAME;password={PASSWORD};encrypt=true"
+
+# Shadow database connection string for development
+SHADOW_DATABASE_URL="sqlserver://DB_SERVER_NAME.database.windows.net:1433;database=DB_NAME;user=DB_USER@DB_SERVER_NAME;password={PASSWORD};encrypt=true"
+```
+
+4. After to install all the Node.Js packages, now you can execute the command:
 
 ```bash
 > nodemon
 ```
 
-3. Now you will see the message saying the application is running in the port: `localhost:3000/api/v1` and start to test locally the application (using Postman):
+5. Now you will see the message saying the application is running in the port: `localhost:3001/api/v1` and start to test locally the application (using Postman):
 
 | Objective  |  HTTP Verb |  Route  | 
 |---|---|---|
@@ -71,9 +82,96 @@ To execute locally this project you will need to follow the steps bellow:
 
 <details><summary><b>Project: client</b></summary>
 
+To execute locally this project you will need to follow the steps bellow:
+
+1. First you need to go to the folder: `client` and run the command:
+
+```bash
+> npm install
+```
+2. After to install all the Node.Js packages, now you can execute the command:
+
+```bash
+> npm run serve
+```
+
+3. Now, open your browser on `http://localhost:8080/` 
+
+4. Inside the project you will see a file: `src/Api.js`. This file contains all the Back-End request information (local or Azure Functions). If you want to test the Front-End, just choose which url you want to test in the Back-End:
+
+```js
+/**
+ * file: src/services/Api.js
+ * data: 01/03/2022
+ * description: file responsible for initializing 'axios' and HTTP base url requests
+ * author: Glaucia Lemos <twitter: @glaucia_lemos86>
+ */
+
+import axios from 'axios';
+
+export default () => axios.create({
+  // => Back-End (local) 'baseURL'-> will make communication btw Front-End with Back-End
+  // baseURL: 'http://localhost:3001/api/v1',
+
+  // ==> Back-End (azure functions)
+  baseURL: 'http://localhost:7071/api',
+});
+```
+
+- **Back-End (local):** http://localhost:3001/api/v1
+- **Back-End (Azure Functions):** http://localhost:7071/api
+
 </details>
 
 <details><summary><b>Project: employee-serverless-api</b></summary>
+
+1. First you need to go to the folder: `employee-serverless-api` and run the command:
+
+```bash
+> npm install
+```
+
+2. Include the Azure SQL Server connection string creating an `.env` file:
+
+```bash
+# Database connection string
+DATABASE_URL="sqlserver://DB_SERVER_NAME.database.windows.net:1433;database=DB_NAME;user=DB_USER@DB_SERVER_NAME;password={PASSWORD};encrypt=true"
+
+# Shadow database connection string for development
+SHADOW_DATABASE_URL="sqlserver://DB_SERVER_NAME.database.windows.net:1433;database=DB_NAME;user=DB_USER@DB_SERVER_NAME;password={PASSWORD};encrypt=true"
+```
+
+3. Now create a file called: `local.settings.json` (root of the project) and include this information below:
+
+```json
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsStorage": ""
+  },
+  "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*"
+  }
+}
+```
+
+4. Now you can execute the command:
+
+```bash
+> npm run dev
+```
+
+You will see the message saying the application is running in the port: `http://localhost:7071/api/`
+
+| Objective  |  HTTP Verb |  Route  | 
+|---|---|---|
+| CreateEmployee  | POST  | http://localhost:7071/api/employees  | 
+| GetEmployees  | GET  | http://localhost:7071/api/employees |   
+| GetEmployee | GET  | http://localhost:7071/api/{id} |   
+| UpdateEmployee  | PUT  | http://localhost:7071/api/{id} |  
+| DeleteEmployee | DELETE  | http://localhost:7071/api/{id} |  
 
 </details>
 
