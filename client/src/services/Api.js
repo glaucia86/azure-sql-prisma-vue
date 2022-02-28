@@ -10,5 +10,5 @@ import axios from 'axios';
 
 export default () => axios.create({
   //= => Back-End 'baseURL'-> will make communication btw Front-End with Back-End
-  baseURL: 'http://localhost:3001/api/v1',
+  baseURL: process.env.VUE_APP_API_BASE_URL,
 });
