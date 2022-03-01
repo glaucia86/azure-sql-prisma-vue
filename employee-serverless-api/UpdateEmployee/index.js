@@ -21,7 +21,7 @@ module.exports = async function (context, req) {
         name: name || undefined,
         job_role: job_role || undefined,
         salary: salary || undefined,
-        employee_registration: employee_registration || undefined,
+        employee_registration: parseInt(employee_registration) || undefined,
       }
     });
 
