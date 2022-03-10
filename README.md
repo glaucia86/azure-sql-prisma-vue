@@ -1,4 +1,4 @@
-# Full Stack Application with Node.Js + Azure SQL + Vue & Prisma
+# Full Stack Application with Node.Js + Azure SQL + Azure Functions + Vue & Prisma
 
 A real study case application how to apply Node.Js with Azure SQL + Prisma & Vue.
 
