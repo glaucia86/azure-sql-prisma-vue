@@ -1,6 +1,14 @@
-# Full Stack Application with Node.Js + Azure SQL + Azure Functions + Vue & Prisma
+# Full Stack Application with Azure SQL & Prisma: Full Course
 
-A real study case application how to apply Node.Js with Azure SQL + Prisma & Vue.
+[![Thumbnail-Full-Stack-App-with-Azure-SQL-Prisma.jpg](https://i.postimg.cc/mkxjK6hB/Thumbnail-Full-Stack-App-with-Azure-SQL-Prisma.jpg)](https://postimg.cc/dkBGy68x)
+
+A real study case application how to apply Node.Js with:
+
+* **Azure SQL**
+* **Prisma**
+* **Vue.Js**
+* **Azure Functions** 
+* **Azure Static Web Apps**
 
 ## 🚀 Resources Used
 
@@ -9,7 +17,7 @@ A real study case application how to apply Node.Js with Azure SQL + Prisma & Vue
 - **[Postman](https://www.getpostman.com/)**
 - **[Azure SQL](https://azure.microsoft.com/products/azure-sql/database/?WT.mc_id=javascript-52133-gllemos)**
 - **[Azure Free Account](https://azure.microsoft.com/?WT.mc_id=javascript-52133-gllemos)**
-- **[Azure App Service](https://docs.microsoft.com/azure/app-service/overview?WT.mc_id=javascript-52133-gllemos)**
+- **[Azure Static Web Apps](https://azure.microsoft.com/services/app-service/static/?WT.mc_id=javascript-52133-gllemos)**
 - **[Azure Functions Vs Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=javascript-52133-gllemos)**
 - **[Prisma Vs Code Extension](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma&WT.mc_id=javascript-52133-gllemos)**
 
@@ -19,12 +27,12 @@ Below you can see all the recorded videos about the application's development.
 
 | Videos           | Description       |
 | ---------------- | ----------------- |
-| **[Vídeo 01]()** | Video Description |
-| **[Vídeo 02]()** | Video Description |
-| **[Vídeo 03]()** | Video Description |
-| **[Vídeo 04]()** | Video Description |
-| **[Vídeo 05]()** | Video Description |
-| **[Vídeo 06]()** | Video Description |
+| **[Video 01 - Course Overview]()** | In this video we will see about the course and the application that will be developed. |
+| **[Video 02 - Learning Objectives]()** | In this video we will see the learning objectives of the Prisma Fundamentals module |
+| **[Video 03 - What is Prisma?]()** | In this video we will learn what is Prisma? |
+| **[Vídeo 04 - Why we Should use Prisma?]()** | In this video we will learn why we should use Prisma, which has been considered a powerful ORM for JavaScript Developers. |
+| **[Video 05 - Key Concepts about Prisma]()** | In this video we will learn the main pillars around the Prisma! |
+| **[Vídeo 06 - Important Resources & Recap]()** | Recap on what we learned and how you can dig deeper into Prisma. |
 | **[Vídeo 07]()** | Video Description |
 | **[Vídeo 08]()** | Video Description |
 | **[Vídeo 09]()** | Video Description |
