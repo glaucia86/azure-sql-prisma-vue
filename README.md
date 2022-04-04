@@ -13,13 +13,17 @@ A real study case application how to apply Node.Js with:
 ## 🚀 Resources Used
 
 - **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=javascript-52133-gllemos)**
-- **[Node.js](https://nodejs.org/en/)**
-- **[Postman](https://www.getpostman.com/)**
+- **[Node.js 14.x](https://nodejs.org/en/)**
+- **[Azure Functions Core Tools 4.x](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash)**
 - **[Azure SQL](https://azure.microsoft.com/products/azure-sql/database/?WT.mc_id=javascript-52133-gllemos)**
 - **[Azure Free Account](https://azure.microsoft.com/?WT.mc_id=javascript-52133-gllemos)**
 - **[Azure Static Web Apps](https://azure.microsoft.com/services/app-service/static/?WT.mc_id=javascript-52133-gllemos)**
-- **[Azure Functions Vs Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=javascript-52133-gllemos)**
-- **[Prisma Vs Code Extension](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma&WT.mc_id=javascript-52133-gllemos)**
+- Some Visual Studio Extensions:
+  - **[Azure Tools Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack&WT.mc_id=javascript-52133-gllemos)**
+  - **[Azure Functions Vs Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=javascript-52133-gllemos)**
+  - **[REST Client Extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client&WT.mc_id=javascript-52133-gllemos)**
+  - **[Remote Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)**
+  - **[Prisma Vs Code Extension](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma&WT.mc_id=javascript-52133-gllemos)**
 
 ## 💻 Video Series
 
@@ -47,8 +51,18 @@ Below you can see all the recorded videos about the application's development.
 | **[Vídeo 18]()** | Video Description |
 | **[Vídeo 19]()** | Video Description |
 | **[Vídeo 20]()** | Video Description |
+| **[Vídeo 21]()** | Video Description |
+| **[Vídeo 22]()** | Video Description |
+| **[Vídeo 23]()** | Video Description |
+| **[Vídeo 24]()** | Video Description |
+| **[Vídeo 25]()** | Video Description |
+| **[Vídeo 26]()** | Video Description |
+| **[Vídeo 27]()** | Video Description |
+| **[Vídeo 28]()** | Video Description |
+| **[Vídeo 29]()** | Video Description |
+| **[Vídeo 30]()** | Video Description |
 
-## How to run the application locally?
+## 🔥 How to run the application locally?
 
 <details><summary><b>Project: employee-api</b></summary> 
 
@@ -131,9 +145,9 @@ export default () => axios.create({
 
 </details>
 
-<details><summary><b>Project: employee-serverless-api</b></summary>
+<details><summary><b>Project: api (serverless)</b></summary>
 
-1. First you need to go to the folder: `employee-serverless-api` and run the command:
+1. First you need to go to the folder: `api` and run the command:
 
 ```bash
 > npm install
@@ -191,6 +205,6 @@ You will see the message saying the application is running in the port: `http://
 - ✅ **[Prisma Client CRUD Docs](https://www.prisma.io/docs/concepts/components/prisma-client/crud)**
 - ✅ **[Deploying to Azure Functions Documentation](https://www.prisma.io/docs/guides/deployment/deployment-guides/deploying-to-azure-functions)**
 
-## Questions? Comments? ❓
+## ❓ Questions? Comments? 
 
 If you have any questions about the code developed, feel free to open an **[ISSUE HERE](https://github.com/glaucia86/azure-sql-prisma-vue/issues)**. We'll get back to you soon!
