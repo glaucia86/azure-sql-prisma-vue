@@ -1,6 +1,6 @@
 /**
  * file: DeleteEmployee/index.js
- * date: 02/21/2022
+ * date: 03/20/2022
  * description: file responsible for delete an 'Employee' by Id
  * author: Glaucia Lemos <Twitter: @glaucia_lemos86>
  */
@@ -13,16 +13,16 @@ module.exports = async function (context, req) {
     const { id } = req.params;
     const employee = await prisma.employee.delete({
       where: {
-        employee_id: String(id),
+        employee_id: parseInt(id),
       },
     });
 
     return {
       status: 200,
       body: employee,
-    }
+    };
   } catch (error) {
     context.log('Error to delete an Employee.');
     return handleError(500, error, context);
   }
-}
+};

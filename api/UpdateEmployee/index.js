@@ -1,6 +1,6 @@
 /**
  * file: UpdateEmployee/index.js
- * date: 02/21/2022
+ * date: 04/05/2022
  * description: file responsible for update an 'Employee' by Id
  * author: Glaucia Lemos <Twitter: @glaucia_lemos86>
  */
@@ -15,22 +15,22 @@ module.exports = async function (context, req) {
 
     const employee = await prisma.employee.update({
       where: {
-        employee_id: String(id),
+        employee_id: parseInt(id),
       },
       data: {
         name: name || undefined,
         job_role: job_role || undefined,
         salary: salary || undefined,
         employee_registration: parseInt(employee_registration) || undefined,
-      }
+      },
     });
 
     return {
       status: 200,
       body: employee,
-    }
+    };
   } catch (error) {
     context.log('Error to update an Employee');
     return handleError(500, error, context);
   }
-}
+};

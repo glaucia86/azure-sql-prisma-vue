@@ -43,7 +43,7 @@ exports.findEmployeeById = async (req, res) => {
     const { id } = req.params;
     const employee = await prisma.employee.findUnique({
       where: {
-        employee_id: String(id),
+        employee_id: parseInt(id),
       },
     });
     res.status(200).send(employee);
@@ -60,7 +60,7 @@ exports.updateEmployeeById = async (req, res) => {
 
     const employee = await prisma.employee.update({
       where: {
-        employee_id: String(id),
+        employee_id: parseInt(id),
       },
       data: {
         name: name || undefined,
@@ -83,7 +83,7 @@ exports.deleteEmployeeById = async (req, res) => {
     const { id } = req.params;
     const employee = await prisma.employee.delete({
       where: {
-        employee_id: String(id),
+        employee_id: parseInt(id),
       },
     });
     res

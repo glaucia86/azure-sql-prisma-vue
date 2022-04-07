@@ -4,7 +4,7 @@ BEGIN TRAN;
 
 -- CreateTable
 CREATE TABLE [dbo].[Employee] (
-    [employee_id] NVARCHAR(1000) NOT NULL,
+    [employee_id] INT NOT NULL IDENTITY(1,1),
     [name] NVARCHAR(100) NOT NULL,
     [job_role] NVARCHAR(100) NOT NULL,
     [salary] DECIMAL(12,2) NOT NULL,
