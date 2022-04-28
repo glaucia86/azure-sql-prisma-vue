@@ -22,6 +22,7 @@ module.exports = async function (context, req) {
     };
   } catch (error) {
     context.log('Error to delete an Employee.');
+    context.log(error);
     return handleError(500, error, context);
   }
 };

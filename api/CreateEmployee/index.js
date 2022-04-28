@@ -37,6 +37,7 @@ module.exports = async function (context, req) {
     };
   } catch (error) {
     context.log('Error to create a new Employee.');
+    context.log(error);
     return handleError(500, error);
   }
 };
