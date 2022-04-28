@@ -24,14 +24,14 @@
   "author": "Glaucia Lemos <@glaucia_lemos - Twitter>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/glaucia86/azure-sql-prisma-vue/issues"
+    "url": "https://github.com/glaucia86/azuresql-prisma-talk/issues"
   },
-  "homepage": "https://github.com/glaucia86/azure-sql-prisma-vue#readme",
+  "homepage": "https://github.com/glaucia86/azuresql-prisma-talk#readme",
   "devDependencies": {
     "@azure/functions": "^3.0.0",
-    "prisma": "3.13.0"
+    "prisma": "3.11.0"
   },
   "dependencies": {
-    "@prisma/client": "3.13.0"
+    "@prisma/client": "3.11.0"
   }
 }
