@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "Back-End application using Azure Functions + Azure SQL + + Azure Functions & Prisma",
+  "description": "Back-End application using Azure Functions + Azure SQL + Prisma",
   "scripts": {
     "dev": "func start"
   },
@@ -11,10 +11,11 @@
     "prisma",
     "azure-sql",
     "javascript",
-    "nodejs",
     "vue",
     "crud-app",
     "azure",
+    "azure-web-app",
+    "azure-app-service",
     "aswa",
     "azure-static-web-apps",
     "azure-functions",
@@ -26,11 +27,11 @@
     "url": "https://github.com/glaucia86/azure-sql-prisma-vue/issues"
   },
   "homepage": "https://github.com/glaucia86/azure-sql-prisma-vue#readme",
-  "dependencies": {
-    "@prisma/client": "3.13.0",
+  "devDependencies": {
+    "@azure/functions": "^3.0.0",
     "prisma": "3.13.0"
   },
-  "devDependencies": {
-    "@azure/functions": "3.0.0"
+  "dependencies": {
+    "@prisma/client": "3.13.0"
   }
 }
