@@ -1,9 +1,8 @@
 // @ts-nocheck
 /**
  * file: src/components/pages/list-employee/ListEmployee.js
- * data: 01/03/2022
- * description: file responsible for component logic
- *  ListEmployeeComponent.vue'
+ * data: 04/27/2022
+ * description: file responsible for component logic ListEmployeeComponent.vue'
  * author: Glaucia Lemos <twitter: @glaucia_lemos86>
  */
 
@@ -40,8 +39,13 @@ export default {
         confirmButtonText: 'Yes! Please, delete it!',
       }).then(async (result) => {
         if (result.value) {
-          await EmployeeService.deleteEmployee(id);
-          this.$swal('Deleted', 'Successfully deleted', 'success');
+          await EmployeeService.deleteEmployee(id)
+            .then(() => {
+              this.$swal('Deleted', 'Successfully deleted', 'success');
+            })
+            .catch((error) => {
+              this.$swal('Deleted', error.message, 'error');
+            });
           this.listAllEmployees();
         } else {
           this.$swal('Cancelled', 'Cancel deletion', 'info');

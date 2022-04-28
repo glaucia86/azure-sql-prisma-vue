@@ -1,6 +1,6 @@
 /**
  * file: src/services/EmployeeService.js
- * data: 01/03/2022
+ * data: 04/27/2022
  * description: file responsible for the Apis requests by HTTP
  * author: Glaucia Lemos <twitter: @glaucia_lemos86>
  */
@@ -17,7 +17,11 @@ export default {
       const response = await Api().post('/employees', employee);
       return response.data;
     } catch (error) {
-      return console.log(error);
+      if (error.response.status === 409) {
+        throw new Error('Employee already exists!', error);
+      }
+      console.error(error);
+      throw new Error('Error!');
     }
   },
 
@@ -30,7 +34,8 @@ export default {
       const response = await Api().get('/employees');
       return response.data;
     } catch (error) {
-      return console.log(error);
+      console.error(error);
+      throw new Error('Error!');
     }
   },
 
@@ -43,7 +48,11 @@ export default {
       const response = await Api().get(`/employees/${id}`);
       return response.data;
     } catch (error) {
-      return console.log(error);
+      if (error.response.status === 404) {
+        throw new Error('Employee not found!', error);
+      }
+      console.error(error);
+      throw new Error('Error!');
     }
   },
 
@@ -57,7 +66,11 @@ export default {
       const response = await Api().put(`/employees/${id}`, employee);
       return response.data;
     } catch (error) {
-      return console.log(error);
+      if (error.response.status === 404) {
+        throw new Error('Employee not found!', error);
+      }
+      console.error(error);
+      throw new Error('Error!');
     }
   },
 
@@ -70,7 +83,8 @@ export default {
       const response = await Api().delete(`/employees/${id}`);
       return response.data;
     } catch (error) {
-      return console.log(error);
+      console.error(error);
+      throw new Error('Error!');
     }
   },
 };
