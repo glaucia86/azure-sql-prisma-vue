@@ -13,8 +13,8 @@ export default () => axios.create({
   // baseURL: process.env.VUE_APP_API_BASE_URL,
 
   // ==> Back-End (Azure Functions - locally)
-  // baseURL: 'http://localhost:7071/api',
+  baseURL: 'http://localhost:7071/api',
 
   // ==> Back-End (Azure Functions - deployed to ASWA)
-  baseURL: '/api',
+  // baseURL: '/api',
 });

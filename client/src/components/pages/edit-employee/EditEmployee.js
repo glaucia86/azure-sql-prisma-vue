@@ -1,8 +1,7 @@
 /**
  * file: src/components/pages/edit-employee/EditEmployee.js
- * data: 01/03/2022
- * description: file responsible for component logic
- *  'EditEmployeeComponent.vue'
+ * data: 04/27/2022
+ * description: file responsible for component logic 'EditEmployeeComponent.vue'
  * author: Glaucia Lemos <twitter: @glaucia_lemos86>
  */
 
@@ -13,8 +12,7 @@ export default {
   name: 'EditEmployeeComponent',
   data() {
     return {
-      employeeForm: {
-      },
+      employeeForm: {},
     };
   },
 
@@ -25,26 +23,51 @@ export default {
   methods: {
     async getEmployeeById() {
       const { id } = this.$route.params;
-      const response = await EmployeeService.getEmployeeId(id);
-
-      this.employeeForm = { ...response };
+      try {
+        const response = await EmployeeService.getEmployeeId(id);
+        this.employeeForm = { ...response };
+      } catch (error) {
+        await this.$swal({
+          title: error.message,
+          icon: 'error',
+          showConfirmButton: true,
+          allowOutsideClick: false,
+          allowEnterKey: true,
+          allowEscapeKey: false,
+        });
+        this.$router.push({
+          name: 'list',
+        });
+      }
     },
 
     async updateFormEmployee() {
       //  Service call passing properties through 'employeeForm'
-      await EmployeeService.updateEmployee(this.employeeForm);
-      this.$swal({
-        title: 'Employee updated successfully!',
-        icon: 'success',
-        showConfirmButton: true,
-        allowOutsideClick: false,
-        allowEnterKey: true,
-        allowEscapeKey: false,
-      }).then((data) => {
+      try {
+        await EmployeeService.updateEmployee(this.employeeForm);
+
+        await this.$swal({
+          title: 'Employee updated successfully!',
+          icon: 'success',
+          showConfirmButton: true,
+          allowOutsideClick: false,
+          allowEnterKey: true,
+          allowEscapeKey: false,
+        });
+      } catch (error) {
+        await this.$swal({
+          title: error.message,
+          icon: 'error',
+          showConfirmButton: true,
+          allowOutsideClick: false,
+          allowEnterKey: true,
+          allowEscapeKey: false,
+        });
+      } finally {
         this.$router.push({
           name: 'list',
         });
-      });
+      }
     },
   },
 };

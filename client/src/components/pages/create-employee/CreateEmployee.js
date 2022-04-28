@@ -1,8 +1,7 @@
 /**
  * file: src/components/pages/create-employee/CreateEmployee.js
- * data:
- * description: file responsible for component logic
- *  'CreateEmployeeComponent.vue'
+ * data: 04/27/2022
+ * description: file responsible for component logic 'CreateEmployeeComponent.vue'
  * author: Glaucia Lemos <twitter: @glaucia_lemos86>
  */
 
@@ -57,7 +56,14 @@ export default {
           });
         });
       } catch (error) {
-        console.log(error);
+        this.$swal({
+          title: error.message,
+          icon: 'error',
+          showConfirmButton: true,
+          allowOutsideClick: false,
+          allowEnterKey: true,
+          allowEscapeKey: false,
+        });
       }
     },
   },

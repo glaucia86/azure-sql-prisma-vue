@@ -51,6 +51,7 @@
             <label class="font-weight-bold">Employee Registration</label>
             <input
               type="text"
+              disabled
               id="employee_registration"
               name="employee_registration"
               class="form-control"
