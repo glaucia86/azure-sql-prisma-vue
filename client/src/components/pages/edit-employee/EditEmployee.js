@@ -1,7 +1,8 @@
 /**
  * file: src/components/pages/edit-employee/EditEmployee.js
- * data: 04/27/2022
- * description: file responsible for component logic 'EditEmployeeComponent.vue'
+ * data: 01/03/2022
+ * description: file responsible for component logic
+ *  'EditEmployeeComponent.vue'
  * author: Glaucia Lemos <twitter: @glaucia_lemos86>
  */
 

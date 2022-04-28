@@ -1,8 +1,9 @@
 // @ts-nocheck
 /**
  * file: src/components/pages/list-employee/ListEmployee.js
- * data: 04/27/2022
- * description: file responsible for component logic ListEmployeeComponent.vue'
+ * data: 01/03/2022
+ * description: file responsible for component logic
+ *  ListEmployeeComponent.vue'
  * author: Glaucia Lemos <twitter: @glaucia_lemos86>
  */
 

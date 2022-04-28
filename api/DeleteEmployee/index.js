@@ -1,6 +1,6 @@
 /**
  * file: DeleteEmployee/index.js
- * date: 04/27/2022
+ * date: 03/20/2022
  * description: file responsible for delete an 'Employee' by Id
  * author: Glaucia Lemos <Twitter: @glaucia_lemos86>
  */

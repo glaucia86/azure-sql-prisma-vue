@@ -1,6 +1,6 @@
 /**
  * file: GetEmployees/index.js
- * date: 04/27/2022
+ * date: 03/20/2022
  * description: file responsible for list all the 'Employees'
  * author: Glaucia Lemos <Twitter: @glaucia_lemos86>
  */
@@ -24,6 +24,6 @@ module.exports = async function (context, req) {
     };
   } catch (error) {
     context.log('Error to list all the Employees.');
-    return handleError(500, error, context);
+    return handleError(500, error);
   }
 };

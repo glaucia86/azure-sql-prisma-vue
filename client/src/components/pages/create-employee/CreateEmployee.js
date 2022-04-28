@@ -1,7 +1,8 @@
 /**
  * file: src/components/pages/create-employee/CreateEmployee.js
- * data: 04/27/2022
- * description: file responsible for component logic 'CreateEmployeeComponent.vue'
+ * data:
+ * description: file responsible for component logic
+ *  'CreateEmployeeComponent.vue'
  * author: Glaucia Lemos <twitter: @glaucia_lemos86>
  */
 
