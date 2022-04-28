@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "Back-End application using Azure Functions + Azure SQL + Prisma",
+  "description": "Back-End application using Azure Functions + Azure SQL + + Azure Functions & Prisma",
   "scripts": {
     "dev": "func start"
   },
