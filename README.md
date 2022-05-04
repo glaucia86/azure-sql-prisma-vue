@@ -25,42 +25,50 @@ A real study case application how to apply Node.Js with:
   - **[Remote Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)**
   - **[Prisma Vs Code Extension](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma&WT.mc_id=javascript-52133-gllemos)**
 
+
+## FrontEnd Starter Project
+
+Before starting to watch the video series we recommend that you download the project (FrontEnd side).
+Because we will use it to make the communication with the BackEnd created during this course!
+
+**[FrontEnd Starter Project - HERE](https://github.com/glaucia86/frontend-vue-starter-app)**
+
 ## 💻 Video Series
 
 Below you can see all the recorded videos about the application's development.
 
-| Videos           | Description       |
-| ---------------- | ----------------- |
-| **[Video 01 - Course Overview]()** | In this video we will see about the course and the application that will be developed. |
-| **[Video 02 - Learning Objectives]()** | In this video we will see the learning objectives of the Prisma Fundamentals module |
-| **[Video 03 - What is Prisma?]()** | In this video we will learn what is Prisma? |
-| **[Vídeo 04 - Why we Should use Prisma?]()** | In this video we will learn why we should use Prisma, which has been considered a powerful ORM for JavaScript Developers. |
-| **[Video 05 - Key Concepts about Prisma]()** | In this video we will learn the main pillars around the Prisma! |
-| **[Vídeo 06 - Important Resources & Recap]()** | Recap on what we learned and how you can dig deeper into Prisma. |
-| **[Vídeo 07]()** | Video Description |
-| **[Vídeo 08]()** | Video Description |
-| **[Vídeo 09]()** | Video Description |
-| **[Vídeo 10]()** | Video Description |
-| **[Vídeo 11]()** | Video Description |
-| **[Vídeo 12]()** | Video Description |
-| **[Vídeo 13]()** | Video Description |
-| **[Vídeo 14]()** | Video Description |
-| **[Vídeo 15]()** | Video Description |
-| **[Vídeo 16]()** | Video Description |
-| **[Vídeo 17]()** | Video Description |
-| **[Vídeo 18]()** | Video Description |
-| **[Vídeo 19]()** | Video Description |
-| **[Vídeo 20]()** | Video Description |
-| **[Vídeo 21]()** | Video Description |
-| **[Vídeo 22]()** | Video Description |
-| **[Vídeo 23]()** | Video Description |
-| **[Vídeo 24]()** | Video Description |
-| **[Vídeo 25]()** | Video Description |
-| **[Vídeo 26]()** | Video Description |
-| **[Vídeo 27]()** | Video Description |
-| **[Vídeo 28]()** | Video Description |
-| **[Vídeo 29]()** | Video Description |
-| **[Vídeo 30]()** | Video Description |
+| Videos                                         | Description                                                                                                               |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **[Video 01 - Course Overview]()**             | In this video we will see about the course and the application that will be developed.                                    |
+| **[Video 02 - Learning Objectives]()**         | In this video we will see the learning objectives of the Prisma Fundamentals module                                       |
+| **[Video 03 - What is Prisma?]()**             | In this video we will learn what is Prisma?                                                                               |
+| **[Vídeo 04 - Why we Should use Prisma?]()**   | In this video we will learn why we should use Prisma, which has been considered a powerful ORM for JavaScript Developers. |
+| **[Video 05 - Key Concepts about Prisma]()**   | In this video we will learn the main pillars around the Prisma!                                                           |
+| **[Vídeo 06 - Important Resources & Recap]()** | Recap on what we learned and how you can dig deeper into Prisma.                                                          |
+| **[Vídeo 07]()**                               | Video Description                                                                                                         |
+| **[Vídeo 08]()**                               | Video Description                                                                                                         |
+| **[Vídeo 09]()**                               | Video Description                                                                                                         |
+| **[Vídeo 10]()**                               | Video Description                                                                                                         |
+| **[Vídeo 11]()**                               | Video Description                                                                                                         |
+| **[Vídeo 12]()**                               | Video Description                                                                                                         |
+| **[Vídeo 13]()**                               | Video Description                                                                                                         |
+| **[Vídeo 14]()**                               | Video Description                                                                                                         |
+| **[Vídeo 15]()**                               | Video Description                                                                                                         |
+| **[Vídeo 16]()**                               | Video Description                                                                                                         |
+| **[Vídeo 17]()**                               | Video Description                                                                                                         |
+| **[Vídeo 18]()**                               | Video Description                                                                                                         |
+| **[Vídeo 19]()**                               | Video Description                                                                                                         |
+| **[Vídeo 20]()**                               | Video Description                                                                                                         |
+| **[Vídeo 21]()**                               | Video Description                                                                                                         |
+| **[Vídeo 22]()**                               | Video Description                                                                                                         |
+| **[Vídeo 23]()**                               | Video Description                                                                                                         |
+| **[Vídeo 24]()**                               | Video Description                                                                                                         |
+| **[Vídeo 25]()**                               | Video Description                                                                                                         |
+| **[Vídeo 26]()**                               | Video Description                                                                                                         |
+| **[Vídeo 27]()**                               | Video Description                                                                                                         |
+| **[Vídeo 28]()**                               | Video Description                                                                                                         |
+| **[Vídeo 29]()**                               | Video Description                                                                                                         |
+| **[Vídeo 30]()**                               | Video Description                                                                                                         |
 
 ## 🔥 How to run the application locally?
 
@@ -92,13 +100,13 @@ SHADOW_DATABASE_URL="sqlserver://DB_SERVER_NAME.database.windows.net:1433;databa
 
 5. Now you will see the message saying the application is running in the port: `localhost:3001/api/v1` and start to test locally the application (using Postman):
 
-| Objective  |  HTTP Verb |  Route  | 
-|---|---|---|
-| Create a new Employee  | POST  | localhost:3001/api/v1/employees  | 
-| List All Employees  | GET  | localhost:3001/api/v1/employees |   
-| List Employee By Id | GET  | localhost:3001/api/v1/employees/:id |   
-| Update Employee By Id  | PUT  | localhost:3001/api/v1/employees/:id |  
-| Delete Employee By Id  | DELETE  | localhost:3001/api/v1/employees/:id |  
+| Objective             | HTTP Verb | Route                               |
+| --------------------- | --------- | ----------------------------------- |
+| Create a new Employee | POST      | localhost:3001/api/v1/employees     |
+| List All Employees    | GET       | localhost:3001/api/v1/employees     |
+| List Employee By Id   | GET       | localhost:3001/api/v1/employees/:id |
+| Update Employee By Id | PUT       | localhost:3001/api/v1/employees/:id |
+| Delete Employee By Id | DELETE    | localhost:3001/api/v1/employees/:id |
 
 </details>
 
@@ -179,7 +187,13 @@ SHADOW_DATABASE_URL="sqlserver://DB_SERVER_NAME.database.windows.net:1433;databa
 }
 ```
 
-4. Now you can execute the command:
+4. Now we need to execute the prisma migrate command. Run the command below
+
+```
+> npx prisma migrate dev
+```
+
+5. Now you can execute the command:
 
 ```bash
 > npm run dev
@@ -187,13 +201,13 @@ SHADOW_DATABASE_URL="sqlserver://DB_SERVER_NAME.database.windows.net:1433;databa
 
 You will see the message saying the application is running in the port: `http://localhost:7071/api/`
 
-| Objective  |  HTTP Verb |  Route  | 
-|---|---|---|
-| CreateEmployee  | POST  | http://localhost:7071/api/employees  | 
-| GetEmployees  | GET  | http://localhost:7071/api/employees |   
-| GetEmployee | GET  | http://localhost:7071/api/{id} |   
-| UpdateEmployee  | PUT  | http://localhost:7071/api/{id} |  
-| DeleteEmployee | DELETE  | http://localhost:7071/api/{id} |  
+| Objective      | HTTP Verb | Route                               |
+| -------------- | --------- | ----------------------------------- |
+| CreateEmployee | POST      | http://localhost:7071/api/employees |
+| GetEmployees   | GET       | http://localhost:7071/api/employees |
+| GetEmployee    | GET       | http://localhost:7071/api/{id}      |
+| UpdateEmployee | PUT       | http://localhost:7071/api/{id}      |
+| DeleteEmployee | DELETE    | http://localhost:7071/api/{id}      |
 
 </details>
 
