@@ -12,7 +12,7 @@ module.exports = async function (context, req) {
   try {
     const { name, job_role, salary, employee_registration } = req.body;
 
-    const employeeRegistrationExists = await prisma.employee.findFirst({
+    const employeeRegistrationExists = await prisma.employee.findUnique({
       where: {
         employee_registration: parseInt(employee_registration),
       },
