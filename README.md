@@ -72,43 +72,7 @@ Below you can see all the recorded videos about the application's development.
 
 ## 🔥 How to run the application locally?
 
-<details><summary><b>Project: employee-api</b></summary> 
-
-To execute locally this project you will need to follow the steps bellow:
-
-1. First you need to go to the folder: `employee-api` and run the command:
-
-```bash
-> npm install
-```
-
-3. Include the Azure SQL Server connection string creating an `.env` file:
-
-```bash
-# Database connection string
-DATABASE_URL="sqlserver://DB_SERVER_NAME.database.windows.net:1433;database=DB_NAME;user=DB_USER@DB_SERVER_NAME;password={PASSWORD};encrypt=true"
-
-# Shadow database connection string for development
-SHADOW_DATABASE_URL="sqlserver://DB_SERVER_NAME.database.windows.net:1433;database=DB_NAME;user=DB_USER@DB_SERVER_NAME;password={PASSWORD};encrypt=true"
-```
-
-4. After to install all the Node.Js packages, now you can execute the command:
-
-```bash
-> nodemon
-```
-
-5. Now you will see the message saying the application is running in the port: `localhost:3001/api/v1` and start to test locally the application (using Postman):
-
-| Objective             | HTTP Verb | Route                               |
-| --------------------- | --------- | ----------------------------------- |
-| Create a new Employee | POST      | localhost:3001/api/v1/employees     |
-| List All Employees    | GET       | localhost:3001/api/v1/employees     |
-| List Employee By Id   | GET       | localhost:3001/api/v1/employees/:id |
-| Update Employee By Id | PUT       | localhost:3001/api/v1/employees/:id |
-| Delete Employee By Id | DELETE    | localhost:3001/api/v1/employees/:id |
-
-</details>
+This repo uses [Development Containers](https://code.visualstudio.com/docs/remote/create-dev-container). Make sure to have Docker installed and running on your machine before moving forward. If you want to know more about DevContainers and why they are so important, read here: [Your open source project needs a DevContainer - Here's Why](https://www.aaron-powell.com/posts/2021-03-08-your-open-source-project-needs-a-dev-container-heres-why/).
 
 <details><summary><b>Project: client</b></summary>
 
@@ -125,35 +89,24 @@ To execute locally this project you will need to follow the steps bellow:
 > npm run serve
 ```
 
-3. Now, open your browser on `http://localhost:8080/` 
-
-4. Inside the project you will see a file: `src/Api.js`. This file contains all the Back-End request information (local or Azure Functions). If you want to test the Front-End, just choose which url you want to test in the Back-End:
-
-```js
-/**
- * file: src/services/Api.js
- * data: 01/03/2022
- * description: file responsible for initializing 'axios' and HTTP base url requests
- * author: Glaucia Lemos <twitter: @glaucia_lemos86>
- */
-
-import axios from 'axios';
-
-export default () => axios.create({
-  // => Back-End (local) 'baseURL'-> will make communication btw Front-End with Back-End
-  // baseURL: 'http://localhost:3001/api/v1',
-
-  // ==> Back-End (azure functions)
-  baseURL: 'http://localhost:7071/api',
-});
-```
-
-- **Back-End (local):** http://localhost:3001/api/v1
-- **Back-End (Azure Functions):** http://localhost:7071/api
+3. Now, open your browser on `http://localhost:8080/`. Thanks to the configuration defined in `vue.config.js` all requests will be automatically proxied to the local Azure Functions host. You can learn more about the integrated proxy in vue client here: [VUE CLI Configuration Reference](https://cli.vuejs.org/config/#devserver)
 
 </details>
 
-<details><summary><b>Project: api (serverless)</b></summary>
+<details><summary><b>Project: db</b></summary>
+
+The are different ways you can create an Azure SQL Database. Using the Portal, using AZ CLI or Powershell. The easiest is using the Portal, and you can have see complete walk-through in this recording: [Demo: Deploy Azure SQL Database | Azure SQL for beginners (Ep. 14)](https://www.youtube.com/watch?v=wiBC4OxFX60&list=PLlrxD0HtieHi5c9-i_Dnxw9vxBY-TqaeN&index=21). If you prefer reading instead of watching, here a complete quickstart guide available, with detailed steps for each option: [Quickstart: Create an Azure SQL Database single database](https://docs.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal). If you want something more concise and direct, you can to follow the simple 6-steps guide available here: [Create and connect to an Azure SQL DB](https://dev.to/azure/create-and-connect-to-an-azure-sql-db-9k0). 
+
+Make sure you create *two* Azure SQL databases:
+
+- `azuresql-prisma-database`
+- `azuresql-prisma-database-shadow`
+
+And you also create two users, one for each database. If you are not sure how to do it, don't worry, the links mentioned above will help you in going throught the simple process.
+
+</details>
+
+<details><summary><b>Project: api</b></summary>
 
 1. First you need to go to the folder: `api` and run the command:
 
