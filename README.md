@@ -97,7 +97,7 @@ To execute locally this project you will need to follow the steps bellow:
 
 Depending on what you prefer, you can use a local SQL Server to Azure SQL DB hosted in Azure to run your local application.
 
-** Using local SQL Server **
+**Using local SQL Server**
 
 Thanks to DevContainers, SQL Server 2019 is already running in your enviroment. All you have to do is to create an `.env` file in the `api` folder and add the connection string to connect to the aformentioned SQL Server 2019:
 
@@ -111,7 +111,7 @@ SHADOW_DATABASE_URL="sqlserver://db:1433;database=EmployeeDB;user=sa;password=P@
 
 Unless you have changed the database name, login and password in the Dockerfile that comes into the `.devcontainer` folder, the above connection string is already correct. Of course make sure you use this connection string *only* for testing, as it is using the `sa` account to log into SQL Server, which is the most powerful administrative account and should not be used to connect your application to the database. 
 
-** Using Azure SQL database **
+**Using Azure SQL database**
 
 If you want to test Azure SQL database, to make sure everything will work perfectly even when deployed on Azure, you need to create an Azure SQL database before.
 
