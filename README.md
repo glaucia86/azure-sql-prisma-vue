@@ -190,6 +190,8 @@ You will see the message saying the application is running in the port: `http://
 
 - ✅ **[Build serverless, full stack applications in Azure - Free Course](https://docs.microsoft.com/learn/paths/build-serverless-full-stack-apps-azure/?WT.mc_id=javascript-52133-gllemos)**
 - ✅ **[Azure SQL Documentation](https://docs.microsoft.com/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview?WT.mc_id=javascript-52133-gllemos)**
+- ✅ **[Microsoft Learn Free Course - Azure Static Web Apps](https://docs.microsoft.com/learn/paths/azure-static-web-apps/?WT.mc_id=javascript-52133-gllemos)**
+- ✅ **[Microsoft Learn Free Course - Build Serverless APIs with Azure Functions](https://docs.microsoft.com/learn/modules/build-api-azure-functions/?WT.mc_id=javascript-52133-gllemos)**
 - ✅ **[Microsoft SQL Server Support in Prisma is Production-Ready](https://www.prisma.io/blog/prisma-microsoft-sql-server-azure-sql-production-ga)**
 - ✅ **[Prisma Client CRUD Docs](https://www.prisma.io/docs/concepts/components/prisma-client/crud)**
 - ✅ **[Deploying to Azure Functions Documentation](https://www.prisma.io/docs/guides/deployment/deployment-guides/deploying-to-azure-functions)**
