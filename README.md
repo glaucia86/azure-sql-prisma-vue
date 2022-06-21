@@ -37,38 +37,38 @@ Because we will use it to make the communication with the BackEnd created during
 
 Below you can see all the recorded videos about the application's development.
 
-| Videos                                         | Description                                                                                                               |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **[Video 01 - Course Overview]()**             | In this video we will see about the course and the application that will be developed.                                    |
-| **[Video 02 - Learning Objectives]()**         | In this video we will see the learning objectives of the Prisma Fundamentals module                                       |
-| **[Video 03 - What is Prisma?]()**             | In this video we will learn what is Prisma?                                                                               |
-| **[Vídeo 04 - Why we Should use Prisma?]()**   | In this video we will learn why we should use Prisma, which has been considered a powerful ORM for JavaScript Developers. |
-| **[Video 05 - Key Concepts about Prisma]()**   | In this video we will learn the main pillars around the Prisma!                                                           |
-| **[Vídeo 06 - Important Resources & Recap]()** | Recap on what we learned and how you can dig deeper into Prisma.                                                          |
-| **[Vídeo 07]()**                               | Video Description                                                                                                         |
-| **[Vídeo 08]()**                               | Video Description                                                                                                         |
-| **[Vídeo 09]()**                               | Video Description                                                                                                         |
-| **[Vídeo 10]()**                               | Video Description                                                                                                         |
-| **[Vídeo 11]()**                               | Video Description                                                                                                         |
-| **[Vídeo 12]()**                               | Video Description                                                                                                         |
-| **[Vídeo 13]()**                               | Video Description                                                                                                         |
-| **[Vídeo 14]()**                               | Video Description                                                                                                         |
-| **[Vídeo 15]()**                               | Video Description                                                                                                         |
-| **[Vídeo 16]()**                               | Video Description                                                                                                         |
-| **[Vídeo 17]()**                               | Video Description                                                                                                         |
-| **[Vídeo 18]()**                               | Video Description                                                                                                         |
-| **[Vídeo 19]()**                               | Video Description                                                                                                         |
-| **[Vídeo 20]()**                               | Video Description                                                                                                         |
-| **[Vídeo 21]()**                               | Video Description                                                                                                         |
-| **[Vídeo 22]()**                               | Video Description                                                                                                         |
-| **[Vídeo 23]()**                               | Video Description                                                                                                         |
-| **[Vídeo 24]()**                               | Video Description                                                                                                         |
-| **[Vídeo 25]()**                               | Video Description                                                                                                         |
-| **[Vídeo 26]()**                               | Video Description                                                                                                         |
-| **[Vídeo 27]()**                               | Video Description                                                                                                         |
-| **[Vídeo 28]()**                               | Video Description                                                                                                         |
-| **[Vídeo 29]()**                               | Video Description                                                                                                         |
-| **[Vídeo 30]()**                               | Video Description                                                                                                         |
+| Videos                                                                          | Description                                                                                                                                 |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[Video 01 - Course Overview]()**                                              | In this video we will see about the course and the application that will be developed.                                                      |
+| **[Video 02 - Learning Objectives]()**                                          | In this video we will see the learning objectives of the Prisma Fundamentals module                                                         |
+| **[Video 03 - What is Prisma?]()**                                              | In this video we will learn what is Prisma?                                                                                                 |
+| **[Vídeo 04 - Why we Should use Prisma?]()**                                    | In this video we will learn why we should use Prisma, which has been considered a powerful ORM for JavaScript Developers.                   |
+| **[Video 05 - Key Concepts about Prisma]()**                                    | In this video we will learn the main pillars around the Prisma!                                                                             |
+| **[Vídeo 06 - Important Resources & Recap]()**                                  | Recap on what we learned and how you can dig deeper into Prisma.                                                                            |
+| **[Vídeo 07 - Module 02: Overview]()**                                          | In this video you will see what will learn during the Module 02 about Azure SQL.                                                            |
+| **[Vídeo 08 - What is Azure SQL?]()**                                           | In this video you will understand what is Azure SQL and the different options like: Single Database and Elastic Pool.                       |
+| **[Vídeo 09 - Why should we use Azure SQL?  ]()**                               | In this video you will understand why is so important to use Azure SQL in your projects!                                                    |
+| **[Vídeo 10 - Azure SQL Support in Prisma]()**                                  | In this video we will show you that Azure SQL has a perfect fit with Prisma!                                                                |
+| **[Vídeo 11 - Important Resources & Recap]()**                                  | Recap on what we learned and how you can dig deeper into Azure SQL.                                                                         |
+| **[Vídeo 12 - Module 03: Overview]()**                                          | In this video you will see what will learn during the Module 03 about Azure Static Web Apps.                                                |
+| **[Vídeo 13 - What is Azure Static Web Apps?]()**                               | In this video we will learn what is Azure Static Web Apps.                                                                                  |
+| **[Vídeo 14 - Understanding the Azure Static Web Apps Workflow]()**             | In this video we will understand under the hood how the Azure Static Web Apps workflow works.                                               |
+| **[Vídeo 15 - Why should we use Azure Static Web Apps?]()**                     | In this video we will understand the benefits to use Azure Static Web Apps!                                                                 |
+| **[Vídeo 16 - Which libs/frameworks can I use with Azure Static Web Apps? ]()** | In this video we will see that can use Azure Static Web Apps with different libs and the most popular frameworks!                           |
+| **[Vídeo 17 - Important Resources & Recap]()**                                  | Recap on what we learned and how you can dig deeper into Azure Static Web Apps.                                                             |
+| **[Vídeo 18 - Dev Tools Overview & Installation]()**                            | In this video we are going to install all the necessary dev tools that we will go into need to develop our application in the BackEnd side. |
+| **[Vídeo 19 - Configuring the .devContainer folder]()**                         | In this video we will understand the importance around to create a .devContainer folder in any project and a little overview about it!      |
+| **[Vídeo 20 - Important Resources & Recap]()**                                  | Recap what we saw during the module 04 and preparing for what is coming!                                                                    |
+| **[Vídeo 21]()**                                                                | Video Description                                                                                                                           |
+| **[Vídeo 22]()**                                                                | Video Description                                                                                                                           |
+| **[Vídeo 23]()**                                                                | Video Description                                                                                                                           |
+| **[Vídeo 24]()**                                                                | Video Description                                                                                                                           |
+| **[Vídeo 25]()**                                                                | Video Description                                                                                                                           |
+| **[Vídeo 26]()**                                                                | Video Description                                                                                                                           |
+| **[Vídeo 27]()**                                                                | Video Description                                                                                                                           |
+| **[Vídeo 28]()**                                                                | Video Description                                                                                                                           |
+| **[Vídeo 29]()**                                                                | Video Description                                                                                                                           |
+| **[Vídeo 30]()**                                                                | Video Description                                                                                                                           |
 
 ## 🔥 How to run the application locally?
 
