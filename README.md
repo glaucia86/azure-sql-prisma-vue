@@ -69,6 +69,11 @@ Below you can see all the recorded videos about the application's development.
 | **[Vídeo 28]()**                                                                | Video Description                                                                                                                           |
 | **[Vídeo 29]()**                                                                | Video Description                                                                                                                           |
 | **[Vídeo 30]()**                                                                | Video Description                                                                                                                           |
+| **[Vídeo 31]()**                                                                | Video Description                                                                                                                           |
+| **[Vídeo 32]()**                                                                | Video Description                                                                                                                           |
+| **[Vídeo 33]()**                                                                | Video Description                                                                                                                           |
+| **[Vídeo 34]()**                                                                | Video Description                                                                                                                           |
+| **[Vídeo 35]()**                                                                | Video Description                                                                                                                           |
 
 ## 🔥 How to run the application locally?
 
