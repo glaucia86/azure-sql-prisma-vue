@@ -1,4 +1,4 @@
-# Full Stack Application with Azure SQL & Prisma: Full Course
+# Learn - A Full Stack Application with Azure SQL & Prisma: Full Course
 
 [![Thumbnail-Full-Stack-App-with-Azure-SQL-Prisma.jpg](https://i.postimg.cc/mkxjK6hB/Thumbnail-Full-Stack-App-with-Azure-SQL-Prisma.jpg)](https://postimg.cc/dkBGy68x)
 
