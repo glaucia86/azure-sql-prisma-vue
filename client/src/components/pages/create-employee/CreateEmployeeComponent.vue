@@ -1,14 +1,14 @@
 <template>
   <div class="container">
-    <div class="card">
+    <div class="card border-secondary mb-3">
       <div class="card-header">
         <h3>Add Employee</h3>
       </div>
       <div class="card-body">
         <form v-on:submit.prevent="handleSubmitForm()">
           <!-- INÍCIO BLOCO: Employee Name -->
-          <div class="form-group">
-            <label class="font-weight-bold">Employee Name</label>
+          <div class="mb-3 mt-3">
+            <label class="form-label fw-bold">Employee Name</label>
             <input
               type="text"
               id="name"
@@ -30,8 +30,8 @@
           <!-- FIM BLOCO: Employee Name -->
 
           <!-- INÍCIO BLOCO: Job Role -->
-          <div class="form-group">
-            <label class="font-weight-bold">Job Role</label>
+          <div class="mb-3 mt-3">
+            <label class="form-label fw-bold">Job Role</label>
             <input
               type="text"
               id="job_role"
@@ -53,8 +53,8 @@
           <!-- FIM BLOCO: Job Role -->
 
           <!-- INÍCIO BLOCO: Salary -->
-          <div class="form-group">
-            <label class="font-weight-bold">Salary</label>
+          <div class="mb-3 mt-3">
+            <label class="form-label fw-bold">Salary</label>
             <input
               type="number"
               id="salary"
@@ -76,8 +76,8 @@
           <!-- FIM BLOCO: Salary -->
 
           <!-- INÍCIO BLOCO: Employee Registration -->
-          <div class="form-group">
-            <label class="font-weight-bold">Employee Registration</label>
+          <div class="mb-3 mt-3">
+            <label class="form-label fw-bold">Employee Registration</label>
             <input
               type="number"
               id="employee_registration"
@@ -100,7 +100,7 @@
             </div>
           </div>
           <!-- FIM BLOCO: Employee Registration -->
-          <div class="form-group">
+          <div class="mb-3 mt-3">
             <button @click="submitNewEmployee" class="btn btn-primary">
               <font-awesome-icon :icon="['fas', 'user-plus']" /> Employee
             </button>

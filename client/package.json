@@ -9,11 +9,11 @@
     "lint-fix": "npm run lint --fix"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@fortawesome/vue-fontawesome": "^2.0.8",
     "axios": "^0.21.1",
-    "bootstrap": "^4.5.3",
+    "bootstrap": "^5.2.0",
     "chokidar": "^3.5.3",
     "core-js": "^3.24.1",
     "date-fns": "^2.29.2",
