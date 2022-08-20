@@ -32,8 +32,8 @@ jobs:
           output_location: 'dist' # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
         env: # Add environment variables here
-          NODE_VERSION: 14
-          PRE_BUILD_COMMAND: 'npx prisma@4.2.1 generate'
+          NODE_VERSION: 14.17
+          PRE_BUILD_COMMAND: 'npx prisma@4 generate'
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
