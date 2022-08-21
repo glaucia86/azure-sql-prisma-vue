@@ -12,7 +12,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@fortawesome/vue-fontawesome": "^2.0.8",
-    "axios": "^0.21.1",
+    "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
     "chokidar": "^3.5.3",
     "core-js": "^3.24.1",
@@ -22,7 +22,7 @@
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vue-sweetalert2": "^3.0.8",
-    "vuelidate": "^0.7.6"
+    "vuelidate": "^0.7.7"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
