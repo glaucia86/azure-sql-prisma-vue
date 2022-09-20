@@ -9,6 +9,7 @@ A real study case application how to apply Node.Js with:
 * **Vue.Js**
 * **Azure Functions** 
 * **Azure Static Web Apps**
+* **Azure Dev CLI**
 
 ## 🚀 Resources Used
 
@@ -122,6 +123,43 @@ Unless you have changed the database name, login and password in the Dockerfile 
 **Using Azure SQL database**
 
 If you want to test Azure SQL database, to make sure everything will work perfectly even when deployed on Azure, you need to create an Azure SQL database before.
+
+***Using the Azure Dev CLI***
+
+The following prerequisites are required to use this application. Please ensure that you have them all installed locally.
+
+- [Azure Developer CLI](https://aka.ms/azure-dev/install)
+  - Windows:
+    ```powershell
+    powershell -ex AllSigned -c "Invoke-RestMethod 'https://aka.ms/install-azd.ps1' | Invoke-Expression"
+    ```
+  - Linux/MacOS:
+    ```
+    curl -fsSL https://aka.ms/install-azd.sh | bash
+    ```
+- [Azure CLI (2.38.0+)](https://docs.microsoft.com/cli/azure/install-azure-cli)
+
+To create the necessary infrastructure on Azure:
+
+1. Open a terminal, change directory to the root of this project.
+1. Run the following command to initialize the project, provision Azure resources.
+
+```bash
+azd provision
+```
+For more details, [read the Azure Dev CLI documentation](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/).
+
+Once the infrastructure has been created, create a `.env` file in the `api` folder and copy/paste content from `.azure/azure-sql-prisma-vue/.env`. We only care about the `DATABASE_URL` and `SHADOW_DATABASE_URL` variables:
+
+```bash
+# Database connection string
+DATABASE_URL="sqlserver://DB_SERVER_NAME.database.windows.net:1433;database=DB_NAME;user=DB_USER@DB_SERVER_NAME;password={PASSWORD};encrypt=true"
+
+# Shadow database connection string for development
+SHADOW_DATABASE_URL="sqlserver://DB_SERVER_NAME.database.windows.net:1433;database=DB_NAME;user=DB_USER@DB_SERVER_NAME;password={PASSWORD};encrypt=true"
+```
+
+***Using the Azure Portal***
 
 The are different ways you can create an Azure SQL Database. Using the Portal, using AZ CLI or Powershell. The easiest is using the Portal, and you can have see complete walk-through in this recording: **[Demo: Deploy Azure SQL Database | Azure SQL for beginners (Ep. 14)](https://www.youtube.com/watch?v=wiBC4OxFX60&list=PLlrxD0HtieHi5c9-i_Dnxw9vxBY-TqaeN&index=21)**. If you prefer reading instead of watching, here a complete quickstart guide available, with detailed steps for each option: **[Quickstart: Create an Azure SQL Database single database](https://docs.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal)**. If you want something more concise and direct, you can to follow the simple 6-steps guide available here: **[Create and connect to an Azure SQL DB](https://dev.to/azure/create-and-connect-to-an-azure-sql-db-9k0)**. 
 
