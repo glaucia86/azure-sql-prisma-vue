@@ -29,9 +29,9 @@
   "homepage": "https://github.com/glaucia86/azure-sql-prisma-vue#readme",
   "devDependencies": {
     "@azure/functions": "^3.2.0",
-    "prisma": "^4.2.1"
+    "prisma": "^4.6.0"
   },
   "dependencies": {
-    "@prisma/client": "^4.2.1"
+    "@prisma/client": "^4.6.0"
   }
 }
