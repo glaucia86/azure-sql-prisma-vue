@@ -32,7 +32,7 @@ jobs:
           output_location: 'dist' # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
         env: # Add environment variables here
-          NODE_VERSION: 14
+          NODE_VERSION: 16
           POST_BUILD_COMMAND: 'npm install @prisma/client'
 
   close_pull_request_job:
