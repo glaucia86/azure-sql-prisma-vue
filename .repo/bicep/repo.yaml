@@ -1,0 +1,13 @@
+templateApi: 1.0.0
+metadata:
+  type: repo
+  name: azure-sql-prisma-vue
+  description: "Learn - A Full Stack Application with Azure SQL & Prisma: Full Course"
+
+repo:
+  includeProjectAssets: false
+
+  remotes:
+    - name: azure-sql-prisma-vue-main
+      url: git@github.com:glaucia86/azure-sql-prisma-vue.git
+

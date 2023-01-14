@@ -17,6 +17,9 @@ sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg; \
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-$(lsb_release -cs)-prod $(lsb_release -cs) main" > /etc/apt/sources.list.d/dotnetdev.list';\
 sudo apt-get update && sudo apt-get -y install azure-functions-core-tools-4
 
+# Install Azure Dev CLI
+RUN curl -fsSL https://aka.ms/install-azd.sh | bash
+
 # apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 

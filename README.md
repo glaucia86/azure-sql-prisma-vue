@@ -145,7 +145,7 @@ To create the necessary infrastructure on Azure:
 1. Run the following command to initialize the project, provision Azure resources.
 
 ```bash
-azd provision
+azd up
 ```
 For more details, [read the Azure Dev CLI documentation](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/).
 

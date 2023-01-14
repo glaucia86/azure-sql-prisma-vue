@@ -27,7 +27,12 @@
 		"ms-dotnettools.csharp",
 		"ms-mssql.mssql",
 		"ms-azuretools.vscode-azurefunctions",
-		"Prisma.prisma"
+		"Prisma.prisma",
+
+		// for Azure Developer CLI
+		"ms-azuretools.azure-dev",
+        "ms-azuretools.vscode-bicep",
+        "ms-azuretools.vscode-docker"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
@@ -56,7 +61,14 @@
 	"postCreateCommand": "bash .devcontainer/mssql/postCreateCommand.sh 'P@ssw0rd' './bin/Debug/' './.devcontainer/mssql/'",
 	"features": {
 		"github-cli": "latest",
-		"azure-cli": "latest"
+		"azure-cli": "latest",
+
+		// for Azure Developer CLI
+		"docker-from-docker": "20.10",
+		"node": {
+            "version": "16",
+            "nodeGypDependencies": false
+        }
 	}
 
 }
